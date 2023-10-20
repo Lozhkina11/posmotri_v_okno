@@ -53,9 +53,9 @@ ol {
   flex-direction: row; /* Расположить элементы в строку */
   justify-content: space-between; /* Равномерное распределение между элементами */
   align-items: flex-end; /* Выравнивание элементов к нижней части вертикальной оси */
-  /* height: 100vh; */
+  height: 100vh;
   width: 100%
-  max-width: 1140px;
+  /* max-width: 1140px; */
 }
 .result {}
 .result__video-container {
@@ -108,7 +108,7 @@ ol {
 
 .content__details {
   display: flex; /* Используем Flexbox для элементов внутри .content__details */
-  gap: 30px;
+  gap: 26px;
   flex-direction: column; /* Располагаем элементы в колонку */
   flex-grow: 1; /* Расширяем .content__details на всю доступную высоту */
   /* padding: 20px; */
@@ -158,8 +158,13 @@ ol {
 .preloader-chasing-squares {}
 .square {}
 .cards-list-item-template {}
-.content__list-item {}
-.content__card-link {}
+.content__list-item {
+  padding-bottom: 30px;
+  
+}
+.content__card-link {
+  text-decoration: none;
+}
 .content__video-card {
   display: flex;
   flex-direction: row;
@@ -203,6 +208,7 @@ ol {
 .more-button {
   width: 399px;
   height: 34px;
+  background-color: transparent;
 }
 .error-template {}
 .error {}
