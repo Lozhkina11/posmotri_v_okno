@@ -87,9 +87,6 @@ ol {
   margin-right: 0;
 }
 
-.search-form:focus {
-  border: 1px solid #fff;
-}
 
 .search-form__fieldset {
   flex: 1;
@@ -119,10 +116,12 @@ ol {
   cursor: text;
 }
 
-
-.search-form__label:focus-visible {
+.search-form__textfield:active {
   outline: 1px solid #fff;
-  /* outline-offset: 0; */
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
 }
 
 .search-form__label-text {
@@ -163,7 +162,6 @@ ol {
   appearance: none;
 }
 
-
 /* чекбоксы */
 .search-form__checkbox-list {
   margin-top: 5px;
@@ -176,18 +174,16 @@ ol {
   gap: 0;
 }
 
+.search-form__checkbox-list:has(:focus-visible ){
+  outline: 1px solid #FFF;
+}
 .search-form__checkbox {
-  outline: none;
-  cursor: pointer;
   width: 19px;
   height: 19px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: 1px solid #fff;
-  outline: none;
 }
-
 
 .search-form__pseudo-checkbox {
   display: inline-block;
@@ -195,7 +191,10 @@ ol {
   height: 19px;
   border: 1px solid #fff;
   padding-left: 1px;
- 
+}
+
+.search-form__pseudo-checkbox:hover {
+  cursor: pointer;
 }
 
 .search-form__pseudo-checkbox::before {
@@ -203,31 +202,17 @@ ol {
   width: 15px;
   height: 15px;
   display: inline-block;
-  background: url(/img/Rectangle\ 25.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color:#FFF;
   opacity: 0;
-  
 }
-.search-form__pseudo-checkbox:active::before{
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   opacity: 1;
 }
 
-.search-form__pseudo-checkbox:hover {
-  cursor: pointer;
+
+ .search-form__label:active {
+  outline: 1px solid #fff;
 }
-
-
-/* input[type='checkbox']:checked + span{
-  background: url(/img/Rectangle\ 25.png);
-  background-size: contain;
-  background-position: center;
-
-
-} */
-
-  
 
 /* кнопка */
 .button {
@@ -262,10 +247,13 @@ ol {
 }
 
 
-.search-form__submit-button:focus {
-  border: 1px solid #fff;
+.search-form__submit-button:focus-visible {
+  outline: 1px solid #fff;
 } 
 
+button, input[type="button"], input[type="submit"], input[type="reset"], input[type="file"] {
+  outline: none;
+}
 
 /* ---------------------------------------------------------------- */
 /* правая часть страницы */
