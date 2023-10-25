@@ -259,7 +259,10 @@ ol {
 }
 
 .search-form__submit-button {
-  padding: 6px 73.5px;
+  padding-left: 73.5px;
+  padding-right: 73.5px;
+  padding-top: 6px;
+  padding-bottom: 0px;
 }
 .search-form__submit-button:hover {
   text-decoration: underline;
