@@ -6,6 +6,7 @@
 
 html {
   block-size: 100%;
+  overflow-x: hidden;
 }
 
 .page {
@@ -17,9 +18,10 @@ html {
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
-  block-size: 100%;
+   block-size: 100%; 
   height: auto;
-  padding: 133px 30px;
+  /* padding: 133px 30px; */
+  /* overflow-x: hidden; */
 }
 
 
@@ -56,15 +58,17 @@ ol {
   width: 100%;
   min-width: 1140px;
   height: auto;
-  margin-right: auto;
-  margin-left: auto;
-  /* padding: 133px 30px; */
+  margin: auto;
+  /* margin-right: auto;
+  margin-left: auto; */
+  padding: 133px 30px;
 }
 
 .result {
+  padding-top: 78px;
   box-sizing: border-box;
   min-width: 711px;
-  max-height: 534px;
+  min-height: 534px;
 
 }
 
