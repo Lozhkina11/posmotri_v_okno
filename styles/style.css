@@ -19,6 +19,7 @@ html {
   inline-size: 1200px;
   block-size: 100%;
   height: auto;
+  padding: 133px 30px;
 }
 
 
@@ -57,7 +58,7 @@ ol {
   height: auto;
   margin-right: auto;
   margin-left: auto;
-  padding: 133px 30px;
+  /* padding: 133px 30px; */
 }
 
 .result {
