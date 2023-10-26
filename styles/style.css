@@ -5,8 +5,9 @@
 }
 
 html {
-  padding: 133px 30px;
-  overflow-y: hidden;
+  padding: 133px 0px;
+  /* padding: 133px 30px; */
+  /* overflow-y: hidden; */
   block-size: 100%;
 }
 
@@ -15,15 +16,15 @@ html {
   gap: 30px;
   height: auto;
   margin: auto;
+  /* padding: 133px 0px; */
   padding: 133px 30px;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
-   block-size: 100%;
+  block-size: 100%;
 }
-
 
 h1,
 h2,
@@ -79,6 +80,7 @@ ol {
   width: 711px;
   height: 385px;
   object-fit: cover;
+  object-position: center;
 }
 
 /* форма поиска */
@@ -101,6 +103,7 @@ ol {
 .search-form__fieldset-title {
   box-sizing: border-box;
   padding-top: 16px;
+  padding-bottom: 5px;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
@@ -109,6 +112,7 @@ ol {
   line-height: normal;
 }
 
+
 /* лэйбл */
 .search-form__label {
   display: flex;
@@ -116,15 +120,17 @@ ol {
   box-sizing: border-box;
   width: fit-content;
   margin-right: 20px;
+  cursor: pointer;
+  padding-bottom: 0px;
 }
 
 .search-form__label:last-child {
   margin-right: 0;
 }
 
-.search-form__label:hover {
+/* .search-form__label:hover {
   cursor: text;
-}
+} */
 
 .search-form__textfield:active {
   outline: 1px solid #fff;
@@ -140,7 +146,7 @@ ol {
 
 .search-form__label-text:hover {
   text-decoration: underline;
-  cursor: pointer;
+  cursor: text;
 }
 
 .visually-hidden {
@@ -162,7 +168,7 @@ ol {
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -174,14 +180,24 @@ ol {
   appearance: none;
 }
 
+/* .search-form__textfield:hover {
+  cursor: text;
+} */
+
+.search-form__textfield::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: inherit;
+}
+
 /* чекбоксы */
 .search-form__checkbox-list {
   display: flex;
   align-items: center;
   margin-top: 5px;
+
 }
 
-.search-form__checkbox-list:has(:focus-visible) {
+.search-form__checkbox-list:focus .search-form__pseudo-checkbox {
   outline: 1px solid #fff;
 }
 
@@ -189,8 +205,11 @@ ol {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
 }
-
+.search-form__checkbox:link {
+  outline: 1px solid #fff;
+}
 .search-form__pseudo-checkbox {
   display: inline-block;
   box-sizing: border-box;
@@ -198,8 +217,11 @@ ol {
   height: 19px;
   border: 1px solid #fff;
   padding-left: 1px;
-  background-color:#1b1919;
+  background-color: #1b1919;
+  outline: none;
 }
+
+
 
 .search-form__pseudo-checkbox:hover {
   cursor: pointer;
@@ -242,18 +264,19 @@ ol {
   cursor: pointer;
 }
 
+.button:active {
+  background: #545050;
+}
+
 .search-form__submit-button {
   padding-top: 6px;
   padding-right: 73.5px;
-  padding-bottom: 0px;
+  padding-bottom: 6px;
   padding-left: 73.5px;
+  margin-bottom: 5px;
 }
 .search-form__submit-button:hover {
   text-decoration: underline;
-}
-
-.search-form__submit-button:active {
-  background: #545050;
 }
 
 .search-form__submit-button:focus-visible {
@@ -351,7 +374,10 @@ input[type="file"] {
   display: block;
   margin: 2px;
   text-decoration: none;
+  outline: none;
 }
+
+
 
 .content__list-item:focus {
   outline: none;
@@ -361,7 +387,11 @@ input[type="file"] {
   outline: 1px solid #fff;
 }
 
-.content__card-link.content__card-link_current:active {
+.content__card-link_current:link{
+  background: #545050;
+}
+
+.content__card-link:focus .content__video {
   background: #545050;
 }
 
@@ -410,6 +440,7 @@ input[type="file"] {
   width: 194px;
   height: 103px;
   object-fit: cover;
+  object-position: center;
 }
 
 .more-button-template {
@@ -425,6 +456,11 @@ input[type="file"] {
 .more-button {
   width: 399px;
   background-color: transparent;
+  margin-bottom: 3px;
+}
+
+.more-button:focus-visible {
+  outline: 1px solid #fff;
 }
 
 .error-template {
@@ -438,7 +474,7 @@ input[type="file"] {
 }
 
 .error__title {
-  color: #FFF;
+  color: #fff;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 30px;
