@@ -112,6 +112,7 @@ ol {
   font-size: 18px;
   font-style: normal;
   line-height: normal;
+  margin-top: -10px;
 }
 
 
@@ -194,7 +195,7 @@ ol {
 /* чекбоксы */
 .search-form__checkbox-list {
   display: flex;
-  align-items: center;
+  align-items:flex-start;
   /* margin-top: 5px; */
 
 }
