@@ -131,7 +131,10 @@ ol {
   padding-bottom: 0px;
   /* align-items: center; */
   align-items: baseline;
+  margin-top: -9px;
 }
+
+
 
 .search-form__label:first-child {
   margin-left: 7px;
@@ -164,7 +167,7 @@ ol {
   font-weight: 400;
   line-height: normal;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   margin-top: 2px;
   /* margin-bottom: 2px; */
 }
@@ -172,6 +175,9 @@ ol {
 .search-form__label-text:first-child {
   padding-left: 20px;
 }
+
+
+
 
 .search-form__label-text,
 .search-form__submit-button {
