@@ -125,8 +125,7 @@ ol {
   margin-right: 20px;
   cursor: pointer;
   padding-bottom: 0px;
-  align-items:baseline;
-  
+  align-items:flex-start;
 }
 
 .search-form__label:last-child {
@@ -148,6 +147,7 @@ ol {
 
 .search-form__label-text {
   margin-left: 5px;
+  text-align: center;
 }
 
 .search-form__label-text,
