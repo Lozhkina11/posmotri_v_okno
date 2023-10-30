@@ -154,8 +154,7 @@ ol {
 
 .search-form__label-text {
   margin-left: 5px;
-  /* text-align: center; */
-  color: #fff;
+   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -164,7 +163,6 @@ ol {
   display: flex;
   align-items: baseline;
   margin-top: 2px;
-  /* margin-bottom: 2px; */
 }
 
 .search-form__label-text:first-child {
@@ -297,7 +295,6 @@ ol {
   padding-right: 73.5px;
   padding-bottom: 6px;
   padding-left: 73.5px;
-  /* margin-bottom: 5px; */
 }
 .search-form__submit-button:hover {
   text-decoration: underline;
