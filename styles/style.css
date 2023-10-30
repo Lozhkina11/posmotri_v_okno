@@ -115,11 +115,6 @@ ol {
   margin-top: -10px;
 }
 
-/* .search-form__fieldset-title:nth-of-type(2) {
-  padding-bottom: 0px;
-} */
-
-
 
 /* лэйбл */
 .search-form__label {
@@ -165,7 +160,7 @@ ol {
   display: flex;
   align-items: baseline;
   margin-top: 8px;
-  margin-bottom: 4px;
+  /* margin-bottom: 4px; */
 }
 
 .search-form__label-text:first-child {
