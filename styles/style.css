@@ -129,8 +129,8 @@ ol {
   margin-right: 15px;
   cursor: pointer;
   padding-bottom: 0px;
-  align-items: center;
-  /* align-items: baseline; */
+  /* align-items: center; */
+  align-items: baseline;
 }
 
 .search-form__label:first-child {
