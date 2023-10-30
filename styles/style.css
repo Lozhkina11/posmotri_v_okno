@@ -102,6 +102,10 @@ ol {
   border: none;
 }
 
+.search-form__fieldset:nth-child(2) h2 {
+  padding-left: 7px;
+}
+
 .search-form__fieldset-title {
   box-sizing: border-box;
   padding-top: 16px;
@@ -126,6 +130,7 @@ ol {
   align-items: center;
   /* align-items: baseline; */
 }
+
 .search-form__label:first-child {
   margin-left: 7px;
 }
