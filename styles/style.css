@@ -149,6 +149,12 @@ ol {
 .search-form__label-text {
   margin-left: 5px;
   text-align: center;
+  color: #FFF;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .search-form__label-text,
@@ -196,7 +202,7 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   align-items:flex-start;
-  /* margin-top: 5px; */
+  /* margin-bottom: -30px; */
 
 }
 
