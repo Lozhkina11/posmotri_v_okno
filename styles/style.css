@@ -124,17 +124,18 @@ ol {
 /* лэйбл */
 .search-form__label {
   display: flex;
-  /* justify-content: space-between; */
   box-sizing: border-box;
   width: fit-content;
   margin-right: 20px;
   cursor: pointer;
   padding-bottom: 0px;
   align-items:baseline;
+  margin-left: 5px;
 }
 
 .search-form__label:last-child {
   margin-right: 0;
+  margin-left: 0;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -159,6 +160,10 @@ ol {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.search-form__label-text:first-child {
+  padding-left: 20px;
 }
 
 .search-form__label-text,
