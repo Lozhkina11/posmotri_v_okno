@@ -104,7 +104,9 @@ ol {
 
 .search-form__fieldset:nth-child(2) h2 {
   padding-left: 7px;
+  margin-bottom: 5px;
 }
+
 
 .search-form__fieldset-title {
   box-sizing: border-box;
@@ -163,7 +165,7 @@ ol {
   line-height: normal;
   display: flex;
   align-items: baseline;
-  margin-top: 8px;
+  margin-top: 2px;
   /* margin-bottom: 2px; */
 }
 
@@ -216,7 +218,6 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   align-items: flex-start;
-  /* margin-top: -3px; */
   margin-top: -5px;
   box-sizing: border-box;
 }
