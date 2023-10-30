@@ -130,9 +130,11 @@ ol {
   cursor: pointer;
   padding-bottom: 0px;
   align-items:baseline;
-  margin-left: 5px;
 }
 
+.search-form__label:first-child {
+  margin-left: 5px;
+}
 .search-form__label:last-child {
   margin-right: 0;
   margin-left: 0;
