@@ -119,12 +119,14 @@ ol {
 /* лэйбл */
 .search-form__label {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   box-sizing: border-box;
   width: fit-content;
   margin-right: 20px;
   cursor: pointer;
   padding-bottom: 0px;
+  align-items:baseline;
+  
 }
 
 .search-form__label:last-child {
@@ -146,6 +148,11 @@ ol {
 
 .search-form__label-text {
   margin-left: 5px;
+}
+
+.search-form__label-text,
+.search-form__submit-button {
+  vertical-align: middle;
 }
 
 .visually-hidden {
@@ -457,7 +464,8 @@ input[type="file"] {
 .more-button {
   width: 399px;
   background-color: transparent;
-  margin-bottom: 3px;
+
+  white-space: nowrap;
 }
 
 .more-button:focus-visible {
