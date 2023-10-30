@@ -6,7 +6,6 @@
 
 html {
   padding: 133px 0px;
-  /* padding: 133px 30px; */
   overflow-y: hidden;
   block-size: 100%;
   height: 100%;
@@ -17,7 +16,6 @@ html {
   gap: 30px;
   height: auto;
   margin: auto;
-  /* padding: 133px 0px; */
   padding: 133px 30px;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
