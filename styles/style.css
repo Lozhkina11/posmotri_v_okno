@@ -115,6 +115,10 @@ ol {
   margin-top: -10px;
 }
 
+/* .search-form__fieldset-title:nth-of-type(2) {
+  padding-bottom: 0px;
+} */
+
 
 
 /* лэйбл */
@@ -126,7 +130,7 @@ ol {
   margin-right: 20px;
   cursor: pointer;
   padding-bottom: 0px;
-  align-items:flex-start;
+  align-items:baseline;
 }
 
 .search-form__label:last-child {
@@ -202,7 +206,8 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   align-items:flex-start;
-  /* margin-bottom: -30px; */
+  margin-top: -3px;
+  box-sizing:border-box;
 
 }
 
