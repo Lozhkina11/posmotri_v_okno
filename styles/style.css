@@ -6,8 +6,6 @@
 
 html {
   padding: 133px 0px;
-  /* padding: 133px 30px; */
-  /* overflow-y: hidden; */
   block-size: 100%;
   height: 100%;
 }
@@ -17,7 +15,6 @@ html {
   gap: 30px;
   height: auto;
   margin: auto;
-  /* padding: 133px 0px; */
   padding: 133px 30px;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -159,8 +156,7 @@ ol {
 
 .search-form__label-text {
   margin-left: 5px;
-  /* text-align: center; */
-  color: #fff;
+   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -169,7 +165,6 @@ ol {
   display: flex;
   align-items: center;
   margin-top: 2px;
-  /* margin-bottom: 2px; */
 }
 
 .search-form__label-text:first-child {
@@ -305,7 +300,6 @@ ol {
   padding-right: 73.5px;
   padding-bottom: 6px;
   padding-left: 73.5px;
-  /* margin-bottom: 5px; */
 }
 .search-form__submit-button:hover {
   text-decoration: underline;
@@ -409,16 +403,16 @@ input[type="file"] {
   outline: none;
 }
 
-.content__list-item:focus {
-  outline: none;
-}
-
-.content__list-item:focus-visible {
-  outline: 1px solid #fff;
-}
-
 .content__card-link_current:link {
   background: #545050;
+}
+/* добавление фокуса на элементы списка  */
+.content__card-link_current:focus-visible {
+  outline: 1px solid #FFF;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #FFF;
 }
 
 .content__card-link:focus .content__video {
