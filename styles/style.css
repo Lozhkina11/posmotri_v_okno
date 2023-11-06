@@ -115,7 +115,7 @@ ol {
   font-size: 18px;
   font-style: normal;
   line-height: normal;
-  /* margin-top: -10px; */
+  margin-top: -10px;
 }
 
 /* лэйбл */
@@ -128,7 +128,6 @@ ol {
   padding-bottom: 0px;
   align-items: center;
   /* align-items: baseline; */
-  /* margin-top: -9px; */
 }
 
 .search-form__label:first-child {
@@ -161,16 +160,13 @@ ol {
   font-weight: 400;
   line-height: normal;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   margin-top: 2px;
 }
 
 .search-form__label-text:first-child {
   padding-left: 20px;
 }
-
-
-
 
 .search-form__label-text,
 .search-form__submit-button {
